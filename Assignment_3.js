@@ -102,7 +102,7 @@ let given_date = new Date('2023-07-01');
 let daysInMonth = getDaysInMonth(given_date);
 // console.log(daysInMonth); // Output: 30
 
-// ============================ String questions :
+// ========================================================================= String questions :
 // ------------------------------------------------------Question 1.a 
 var str = "amit yadav";
 // console.log(str.length);
@@ -195,15 +195,80 @@ for (ch of str.toLowerCase()) {
 
 // ---------------------------------------------- Question 3
 const sen = "capitalize the first letter of every word";
-let output = sen.split(' ').map(str =>{
+let output = sen.split(' ').map(str => {
     return str[0].toLocaleUpperCase() + str.slice(1)
 })
 // console.log(output.join(' '));
 
 // ------------------------------------------------- Quwstion 4
-var Input = require('readline-sync');
-const data = Input.question('Enter your string : ')
-var sortedString = data.split('').sort().join('');
-// console.log(sortedString);
+// var Input = require('readline-sync');
+// const data = Input.question('Enter your string : ')
+// var sortedString = data.split('').sort().join('');
+// console.log(sortedString);                       // #$%&*+-/,number,@,capital_letter,small_letter
 
 // ---------------------------------------------------- Question 5
+
+var str = "Welcome???@@##$ to#$% kumar%$^$%^& yadav";
+// similar to Matcher.replaceAll
+const removePunchu = str = str.replace(/[^a-zA-Z ]/g, "");
+// console.log(removePunchu);
+
+// ....................................
+
+var punctuationRegex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
+// Remove punctuation characters from the string
+const ans = str.replace(punctuationRegex, '');
+// const ans = str.replace(/[^\w\s]/g, '');
+// const ans = str.replace(/[^a-zA-Z0-9 ]/g, '');
+// console.log(ans);
+
+// --------------------------------------------------------- Question 6
+function two(name, age) {
+    console.log(`My name is ${name} and I am ${age} years old.`);
+}
+// two("Amit Yadav", 24);
+
+// ============================================= Array methods questions ?
+// -------------------------------------------- 1.(a) 
+function sumArrays(arr1, arr2) {
+    return arr1.map((num, index) => num + arr2[index]);
+}
+var arr1 = [1, 2, 3];
+var arr2 = [4, 5, 6];
+var sumArray = sumArrays(arr1, arr2);
+// console.log(sumArray);
+
+// .......................................
+const sum = []
+for(var i = 0; i < arr1.length; i++){
+    sum.push(arr1[i] + arr2[i]);
+ }
+//  console.log(sum);
+
+// -------------------------------------------- 1.(b)
+var myArray = [1, 2, 3, 4, 5];
+// const arr = myArray.shift();
+// console.log("get removed item -",arr);
+
+myArray.shift();
+// console.log("After removing - ",myArray);
+
+// ------------------------------------------------ 1.(c)
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon");
+// console.log(fruits);
+
+// -------------------------------------------------- 1.(d)
+const data = [1,2,3,4,5,6,7,8,9];
+// const remove = data.pop(); // get removed item
+// console.log(remove);
+
+data.pop()
+// console.log(data);  // after removing get item 
+
+// ------------------------------------------------------  1.(e)
+const add = [1,2,3,4,5,6,7,8,9];
+add.push(10); // get removed item
+console.log(add);
+
+// --------------------------------------------------- 
