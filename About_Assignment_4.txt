@@ -1,0 +1,50 @@
+Assignment 4
+[ Topics covered : Functions, Arrow functions, Callbacks, Higher Order Functions, Timing Functions, Map+filter+reduce, JS Modules, Scope in JS, Hoisting in JS ]
+
+1) Explain with the help of an example - 
+    a) Function declaration/statement,
+    b) Function invocation, 
+    c) Anonymous function, 
+    d) Function Expression, 
+    e) Named Function Expression, 
+    f) Parameters and arguments,  
+    g) IIFEs,
+    h) First Class functions/citizens, 
+    i) Callbacks,
+    j) Higher Order Functions, 
+    k) Arrow Functions 
+    l) setTimeout() and clearTimeout()
+    m) setInterval() and clearInterval()
+
+2) Write following programs using a function then update same program using an arrow function-
+    a) find the maximum of two numbers
+    b) find the sum of all elements in an array 
+    c) write a function that takes a string as an argument and returns a new string with all the vowels removed.
+    d) factorial of a number using a recursive function.
+    e) to sort an array of numbers in ascending order using a function.
+
+3) WAP to demonstrate different types of scopes in JS.
+4) WAP to demonstrate Hoisting in JS.
+5) Write a program that simulates a countdown timer, starting from a given number of seconds n and counting down to 0, displaying the remaining time every second using setInterval. After the countdown is over, display a message "Time's up!".
+6) JS Modules questions :-
+    a) Create a module that exports an object with two methods, add and subtract, that take in two arguments each and return the sum and difference of those numbers, respectively. Import this module in another file and use it to find the sum and difference of two numbers.
+    b) Create a module that exports an object with a method calculateArea that takes in two arguments, the length and the breadth of a rectangle, and returns the area of the rectangle. Import this module in another file and use it to find the area of a rectangle.
+    c) Create a module that exports an array of numbers. Import this module in another file and use array methods to find the sum and average of the numbers.
+
+7) Questions based on map + filter + reduce :-
+    a) Write a program that takes an array of strings and returns a new array with the length of each string.
+    b) Write a program that takes an array of numbers and returns the sum and max of all the numbers.
+    c) Write a program that takes an array of numbers and returns a new array with only the numbers that are greater than 5.
+
+8) Suppose you have an array of objects representing students, where each object contains the student's name, age, and grades in different subjects. Your task is to calculate the average grade of students who are older than 18.
+
+const students = [
+  { name: 'Alice', age: 19, grades: [85, 90, 92] },
+  { name: 'Bob', age: 17, grades: [75, 80, 88] },
+  { name: 'Charlie', age: 20, grades: [90, 92, 94] },
+  { name: 'Dave', age: 22, grades: [78, 82, 86] },
+  { name: 'Eve', age: 18, grades: [88, 90, 92] }
+];
+
+Using `map`, `filter`, and `reduce`, write a program to find the average grade of students who are older than 18.
+Hint: You can use `filter` to filter out the students older than 18, `map` to extract their grades, and `reduce` to calculate the sum of the grades. Finally, divide the sum by the number of students to get the average.

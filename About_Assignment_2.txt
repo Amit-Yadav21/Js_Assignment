@@ -1,0 +1,22 @@
+Assignment 2
+(Topics:  Conditional, Looping and Jumping Control Structures )
+
+1) Write a JavaScript program to find the largest of three given numbers.
+
+2) Create a JavaScript program that checks whether a given year is a leap year or not. Leap years are divisible by 4, except for years that are divisible by 100 but not divisible by 400. Implement this logic using if-else if statements and print the result accordingly.
+
+3) Write a JavaScript program to calculate the number of days in a given month. The program should take the month number and the year as input and display the number of days in that month. For example, if the user enters 2, the program should display "28" (assuming it's not a leap year). If the month number is less than 1 or greater than 12, print the appropriate error message. Use switch case to implement this.
+
+4) Write a JavaScript program to display the odd numbers between 1 and 10 using the for loop.
+
+5) Write a JavaScript program to calculate the sum of all the elements in an array using the for…of loop.
+
+6) Write a JavaScript program to display the properties of an object using the for...in loop and the values of the properties using the for...of loop.
+
+7) Write a JavaScript program to create a new array containing only the even numbers from an existing array using the for…of loop.
+
+8) Write a program that calculates the sum of all even numbers between 1 and 500. Use a do…while loop to accomplish this.
+
+9) Write a program that asks the user to enter a series of numbers and stops asking when the user enters a negative number. Calculate the sum of all the positive numbers entered by the user, ignoring the negative number.
+
+10) Write a JavaScript program that prints the first 100 prime numbers, skipping any prime number that ends with the digit 7.

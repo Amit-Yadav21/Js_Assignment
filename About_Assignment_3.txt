@@ -1,0 +1,104 @@
+Assignment 3
+[ Topics covered : Math Object, Date and Time object, String methods, Array Methods in JS, Destructuring Assignment, Spread and Rest Operator, Exception Handling, alert prompt + confirm ]
+
+Math and Date Object questions :-
+---------------------------------
+
+1) Write a program-
+    a) to find the square root of a given number.
+    b) to find the value of PI.
+    c) to generate a random number between 1 and 10.
+    d) to round a given decimal number to the nearest integer.
+    e) to find the absolute value of a given number.
+    f) to calculate the power of a given base to a given exponent.
+2) Write a program-
+    a) to display the current date and time in ISO format (YYYY-MM-DDTHH:MM:SSZ).
+    b) that gets the current date and time and displays it in a human-readable format (e.g. "Today is Monday, April 12, 2021, and the time is 3:30 PM").
+    c) that takes a date as and returns the day of the week (e.g. "Monday", "Tuesday", etc.) in string format.
+    d) that takes a date and returns the number of days in the month that the date falls in.
+
+String questions :-
+--------------------
+
+1) Write a program that takes a string input from the user and :-
+    a) print out the length of the string.
+    b) converts all the characters in the string to uppercase.
+    c) take two strings and concatenate them into a single string.
+    d) takes a string and prints out the first and last characters of the string.
+    e) replaces all occurrences of the letter "a" with the letter "b".
+    f) removes all the whitespace characters from the string.
+    g) prints out the number of vowels (a, e, i, o, u) in the string.
+2) Write a program that takes a string input from the user and checks if the string is a palindrome (reads the same backwards as forwards).
+3) Write a program that takes a string input from the user and capitalizes the first letter of every word in the string (e.g. "hello world" becomes "Hello World").
+4) Write a program that takes a string input from the user and sorts the characters in the string alphabetically.
+5) Write a program that takes a string input from the user and removes all punctuation characters from the string.
+6) Write a function that takes in two parameters, name and age, and uses a template literal to output a message like this: "My name is __ and I am __ years old."
+
+[Array methods questions]
+-------------------------
+
+1) Write a program that:-
+    a) takes two arrays of numbers as input and returns a new array containing the sum of the corresponding elements in each array.
+    b) takes an array as input and removes the first element using the shift() method.
+    c) takes an array and a value as input and adds the value to the beginning of the array using the unshift() method. Return the modified array.
+    d) takes an array as input and removes the last element using the pop() method. Return the modified array.
+    e) takes an array and a value as input and adds the value to the end of the array using the push() method. Return the modified array.
+    f) takes an array, an index, and a value as input, and inserts the value at the specified index using the splice() method. Return the modified array.
+    g) takes an array and two indices as input, and returns a new array that contains the elements between the two indices (inclusive) using the slice() method.
+    h) takes an array and a value as input, and returns a boolean indicating whether the value is present in the array using the includes() method.
+    i) that takes an array and a value as input, and removes all occurrences of the value from the array using a combination of indexOf() and splice() methods. Return the modified array.
+    j) that takes an array and a value as input, and counts the number of occurrences of the value in the array using a combination of indexOf() and a loop.
+    k) takes a string as input and returns an array of words from the string using the split() method. Assume that sentences in the string are separated by periods.
+    i) that takes an array of strings as input and returns a new array where each element is a string in reverse order using a combination of split() and reverse() methods.
+
+Destructuring Assignment, Spread and Rest Operator
+--------------------------------------------------
+
+1) What will be the output of the following code snippet? 
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1,4, 5, 6]; 
+console.log(arr2);
+
+2) What will be the output of the following code snippet?
+const user = { name: 'John', age: 30 }; 
+const { name, age } = user; 
+console.log(name);
+
+3) What will be the output of the following code snippet? 
+const obj1 = { a: 1, b: 2 }; 
+const obj2 = { ...obj1, c: 3 }; 
+console.log(obj2);
+
+4) What will be the output of the following code? 
+const arr1 = [1, 2, 3]; 
+const arr2 = [4, 5, 6];
+const [a, b, c] = arr1; 
+const [d, ...e] = arr2; 
+const f = [...arr1, ...arr2]; 
+console.log(a,b,c,d,e,f); 
+
+5) What will be the output of the following code? 
+const obj = { 
+name: "John",
+age: 30,
+address: {street: "123 Main St", city: "Anytown",state: "CA"}
+ }; 
+const { name, address: { city } } = obj; 
+console.log(name); 
+console.log(city);
+
+Exception Handling in JS
+------------------------
+
+1) Write a program that takes a number as input and returns its square root. If the input is negative, throw an error with the message "Input must be a positive number". Use try-catch block to handle the error.
+2) Write a program that takes in two arguments and returns their division. Handle the error when the second argument is zero.
+3) Write a program that takes in an array and an index and returns the value at that index. Handle the error if the index is out of bounds (i.e. greater than the length of the array).
+
+
+alert + prompt + confirm
+-------------------------
+
+1) Create a web page that asks the user to enter their name using a prompt box. Display a message using an alert box saying "Hello, [user's name]!".
+2) Write a program that asks the user to confirm if they are over 18 years old using the confirm box. If the user confirms, display a message using an alert box saying "You are eligible for voting". If the user cancels, display a message saying "Sorry, you are not eligible for voting".
+3) Write a program that asks the user to enter a number using a prompt box. If the user enters a number, display the square of that number using the alert box. If the user enters an invalid input or cancels the prompt, display a message saying "Invalid input".
+

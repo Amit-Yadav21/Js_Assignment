@@ -1,0 +1,15 @@
+Assignment 5
+[Topics covered : JSONs, Asynchronous JS, Promises, async and await and Fetch API]
+
+1) Write a JavaScript program to :- 
+    a) convert a JSON object to a string.
+    b) convert a string to a JSON object.
+    c) merge two JSON objects into a single object.
+
+2) WAP to demonstrate Asynchronous behavior in JS (you can use setTimeout()).
+3) Explain Callback hell and  Promises in JS with the help of a code example.
+4) Explain how you can create your own promise with a code example.
+5) Explain Promise Chaining with a code example. Make sure you use .then() and .catch() in your program.
+6) Create a function that takes an array of numbers and returns a promise that resolves to the maximum number in the array. Also reject the promise if the length of the array is zero. Make proper use of Error Handling also.
+7) Create a function that takes an array of numbers and returns a promise that resolves to an array containing only the even numbers from the input array. Also reject the promise if the length of the array is zero. Make proper use of Error Handling also.
+8) What is an API? Which tool do you use for making network requests? Demonstrate how you can make network requests using Fetch API. Make proper use of async/await and try/catch. 
