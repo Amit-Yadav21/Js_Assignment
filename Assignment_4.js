@@ -60,4 +60,17 @@ function sort(arr) {
 }
 const numb = [4, 2, 6, 1, 9, 5];
 const sortedNumbers = sort(numb);
-console.log(sortedNumbers);
+// console.log(sortedNumbers);
+
+// ========================================== 6) JS Modules questions :-
+// ----------------------------- a)
+
+import {add, sub as subtract } from "./operation";
+// import * as operation from "./operation.js";
+
+const result_add = add(2, 3, 4);
+// const result4 = operation.add(2, 3, 4);
+const result_sub = subtract(2, 3);
+
+console.log(result_add); 
+console.log(result_sub);
