@@ -1,8 +1,8 @@
 // ============================= Math and Date Object questions :
+const userInput = require('readline-sync');
 // -------------------------------------Q.1.a find the square root of a given number
-// const int = require('readline-sync');
-// const num = int.questionInt('Enter your number :- ')
-// let squareRoot = Math.sqrt(num);
+const num = userInput.questionInt('Enter your number :- ')
+let squareRoot = Math.sqrt(num);
 // console.log(squareRoot);
 
 // --------------------------------------Q.1.b find the value of PI
@@ -102,8 +102,8 @@ let given_date = new Date('2023-07-01');
 let daysInMonth = getDaysInMonth(given_date);
 // console.log(daysInMonth); // Output: 30
 
-// ========================================================================= String questions :
-// ------------------------------------------------------Question 1.a 
+// =============================================== String questions :
+// -----------------------------------------Question 1.a 
 var str = "amit yadav";
 // console.log(str.length);
 
@@ -155,8 +155,8 @@ var Str = str.replaceAll('a', 'b');
 
 // ----------------------------------Question 1.f
 const str_ = "my name is amit yadav";
-const a = str_.split(" ").join("");
-// console.log(a);
+const ans_ = str_.split(" ").join("");
+// console.log(ans_);
 
 // ----------------------------------------Question 1.g 
 var str = 'amit yYadav';
@@ -183,7 +183,7 @@ for (ch of str.toLowerCase()) {
 
 // ------------------------------------------------- Question 2
 // var userInput = require('readline-sync');
-// const data = userInput.questionInt('Enter your string : ')
+// const data = userInput.question('Enter your string : ')
 // var reverse_data = data.split('').reverse().join('');
 
 // if (userInput === reverse_data) {
@@ -230,24 +230,24 @@ function two(name, age) {
 
 // ============================================= Array methods questions ?
 // -------------------------------------------- 1.(a) 
-function sumArrays(arr1, arr2) {
-    return arr1.map((num, index) => num + arr2[index]);
+function sumArrays(arr_1, arr_2) {
+    return arr_1.map((num, index) => num + arr_2[index]);
 }
-var arr1 = [1, 2, 3];
-var arr2 = [4, 5, 6];
-var sumArray = sumArrays(arr1, arr2);
+var arr_1 = [1, 2, 3];
+var arr_2 = [4, 5, 6];
+var sumArray = sumArrays(arr_1, arr_2);
 // console.log(sumArray);
 
 // .......................................
 const sum = []
-for(var i = 0; i < arr1.length; i++){
-    sum.push(arr1[i] + arr2[i]);
- }
+for (var i = 0; i < arr_1.length; i++) {
+    sum.push(arr_1[i] + arr_2[i]);
+}
 //  console.log(sum);
 
 // -------------------------------------------- 1.(b)
 var myArray = [1, 2, 3, 4, 5];
-// const arr = myArray.shift();
+const arr = myArray.shift();
 // console.log("get removed item -",arr);
 
 myArray.shift();
@@ -259,28 +259,28 @@ fruits.unshift("Lemon");
 // console.log(fruits);
 
 // -------------------------------------------------- 1.(d)
-const data = [1,2,3,4,5,6,7,8,9];
-// const remove = data.pop(); // get removed item
+const data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const remove = data.pop(); // get removed item
 // console.log(remove);
 
 data.pop()
 // console.log(data);  // after removing get item 
 
 // ------------------------------------------------------  1.(e)
-const add = [1,2,3,4,5,6,7,8,9];
+const add = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 add.push(10); // get removed item
 // console.log(add);
 
 // --------------------------------------------------- 1.(f)
 // frist index in splice to add element given by index and second index to remove element given frist index right-side
-const months_ = ['Jan', 'March', 'April', 'June','july','august'];
+const months_ = ['Jan', 'March', 'April', 'June', 'july', 'august'];
 months_.splice(1, 0, 'Feb');
 // console.log(months_); // ["Jan", "Feb", "March", "April", "June"]
 
-months_.splice(4, 1, 'May'); 
+months_.splice(4, 1, 'May');
 // console.log(months_);   // ["Jan", "Feb", "March", "April", "May"]
 
-months_.splice(4, 2, 'May'); 
+months_.splice(4, 2, 'May');
 // console.log(months_);   // ["Jan", "Feb", "March", "April", "May"]
 
 // -------------------------------------------------------- 1.(g)
@@ -298,18 +298,89 @@ const array1 = [1, 2, 3];
 // console.log(array1.includes(4));    // true
 
 // -----------------------------------------------------------1.(i)
-var array = [10,20,30,40,50];
+var array = [10, 20, 30, 40, 50];
 array.splice(array.indexOf(10), 1);
 // console.log(array); // 20,40,50]
 
 // ------------------------------------------------------------1.(j)
-const arr = [1, 2, 3, 2, 4, 5, 2, 5, 4, 6];
+const array = [1, 2, 3, 2, 4, 5, 2, 5, 4, 6];
 const value = 2;
 let count = 0;
 for (let i = 0; i < arr.length; i++) {
-  if (arr[i] === value) {
-    count++;
-  }
+    if (arr[i] === value) {
+        count++;
+    }
 }
 // console.log(`${value} in array ${count} times`);
 
+// ----------------------------------------------------------1.(k)
+const sent = 'my name is amit yadav.'
+const periods = sent.split(' ')
+// console.log(periods);
+
+// -------------------------------------------------------------1.(l)
+const strings = ["Hello", "World", "OpenAI", "Chatbot"];
+const reverseArray = strings.map(str => str.split('').reverse().join(''));
+// console.log(reverseArray);
+
+// =============================================== Destructuring Assignment, Spread and Rest Operator
+// -------------------- What will be the output of the following code snippet?
+var data1 = [1, 2, 3];
+var data2 = [...data1, 4, 5, 6];
+// console.log(data2);  // [ 1, 2, 3, 4, 5, 6 ]
+
+const user = { name: 'John', age: 30 };
+const { name, age } = user;
+// console.log(name); // John
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { ...obj1, c: 3 };
+// console.log(obj2); // { a: 1, b: 2, c: 3 }
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const [a, b, c] = arr1;
+const [d, ...e] = arr2;
+const f = [...arr1, ...arr2];
+// console.log(a,b,c,d,e,f); // 1 2 3 4 [ 5, 6 ] [ 1, 2, 3, 4, 5, 6 ]
+
+const obj = {
+    name_: "John",
+    age: 30,
+    address: { street: "123 Main St", city: "Anytown", state: "CA" }
+};
+const { name_, address: { city } } = obj;
+// console.log(name_); // John
+// console.log(city);  // Anytown
+
+// =============================== Exception Handling in JS
+// ----------------------------------- 1)
+function SquareRoot(num) {
+    if (num < 0) {
+        throw new Error("Input must be a positive number");
+    }
+    return Math.sqrt(num);
+}
+try {
+    const input = -4;
+    const result = SquareRoot(input);
+    console.log(result);
+} catch (error) {
+    console.log(error.message);
+}
+
+// ------------------------------------------ 2)
+function divideNumbers(a, b) {
+    if (b === 0) {
+        throw new Error("Division by zero is not allowed");
+    }
+    return a / b;
+}
+try {
+    const dividend = Input.questionInt('Enter your 1st number : ')
+    const divisor = Input.questionInt('Enter your 2nd number : ')
+    const result = divideNumbers(dividend, divisor);
+    console.log(result);
+} catch (error) {
+    console.log(error.message);
+}

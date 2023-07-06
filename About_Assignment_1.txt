@@ -2,23 +2,14 @@ Assignment 1
 (Topics covered:- Introduction to JS, Variables, Data Types, Operators, Type Conversion)
 
 1) Declare a variable called myLet using the let keyword and assign it the value 10.Print the value of myLet to the console using console.log(). Change the value of myLet to 20.Print the new value of myLet to the console using console.log().
-
 2) Declare a variable called myConst using the const keyword and assign it the value 3.14.Print the value of myConst to the console using console.log().Attempt to change the value of myConst to 2.71. Observe the error message in the console and write a comment explaining why the error occurred.
-
 3) Write a program that calculates the area of a circle with a radius of 5. Use the Math.PI constant and the exponentiation operator (**) to perform the calculation.
-
 4) Write a program that converts a temperature in degrees Celsius to Fahrenheit. Use the formula F = (C * 9/5) + 32 to perform the calculation, where C is the temperature in Celsius.
-
 5) Demonstrate the use of pre-increment/decrement and post-increment/decrement operators. (++a, a++, - -a, a- -)
-
 6) Demonstrate the use of all comparison operators (==,!=,===,!==,>,>=,<,<=) and logical operators ( &&, | | , ! ). 
-
 7) Write a program that takes two numbers as input and displays the larger of the two numbers using the ternary operator (? :).
-
 8) Write a program in JS to demonstrate the use of all the data types in JS. (Number, String, Boolean, BigInt, undefined, null, Symbol, Object).
-
 9) Demonstrate the use of Implicit and Explicit type Conversion in JS.
-
 10) Create two variables, num1 and num2, and assign them the values 10 and "5" respectively.Then do the following :-
     a) Convert num1 to a string and store the result in a new variable called num1AsString.
     b) Convert num2 to a number and store the result in a new variable called num2AsNumber.
