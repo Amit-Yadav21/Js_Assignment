@@ -269,7 +269,47 @@ data.pop()
 // ------------------------------------------------------  1.(e)
 const add = [1,2,3,4,5,6,7,8,9];
 add.push(10); // get removed item
-console.log(add);
+// console.log(add);
 
 // --------------------------------------------------- 1.(f)
+// frist index in splice to add element given by index and second index to remove element given frist index right-side
+const months_ = ['Jan', 'March', 'April', 'June','july','august'];
+months_.splice(1, 0, 'Feb');
+// console.log(months_); // ["Jan", "Feb", "March", "April", "June"]
+
+months_.splice(4, 1, 'May'); 
+// console.log(months_);   // ["Jan", "Feb", "March", "April", "May"]
+
+months_.splice(4, 2, 'May'); 
+// console.log(months_);   // ["Jan", "Feb", "March", "April", "May"]
+
+// -------------------------------------------------------- 1.(g)
+// slice take 2 parameter , 1st start index and second endind point but inclided (end -1) 
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+// console.log(animals.slice(2));  // ["camel", "duck", "elephant"]
+// console.log(animals.slice(2, 4));   // ["camel", "duck"]
+// console.log(animals.slice(1, 5));   // ["bison", "camel", "duck", "elephant"]
+// console.log(animals.slice(-2)); // ["duck", "elephant"]
+// console.log(animals.slice(2, -1));  // ["camel", "duck"]
+// console.log(animals.slice());   // ["ant", "bison", "camel", "duck", "elephant"]
+
+// --------------------------------------------------------- 1.(h)
+const array1 = [1, 2, 3];
+// console.log(array1.includes(4));    // true
+
+// -----------------------------------------------------------1.(i)
+var array = [10,20,30,40,50];
+array.splice(array.indexOf(10), 1);
+// console.log(array); // 20,40,50]
+
+// ------------------------------------------------------------1.(j)
+const arr = [1, 2, 3, 2, 4, 5, 2, 5, 4, 6];
+const value = 2;
+let count = 0;
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] === value) {
+    count++;
+  }
+}
+// console.log(`${value} in array ${count} times`);
 
