@@ -34,7 +34,7 @@ for (let i = 0; i < numbers.length; i++) {
 // ------------------------------------------ 2.(c)
 const str = 'coding beauty';
 const noVowels = str.replace(/[aeiou]/gi, '');
-// console.log(noVowels);
+console.log(noVowels);
 
 function removeVowels(str) {
     return str.replace(/[aeiou]/gi, '');
@@ -65,12 +65,12 @@ const sortedNumbers = sort(numb);
 // ========================================== 6) JS Modules questions :-
 // ----------------------------- a)
 
-import {add, sub as subtract } from "./operation";
+// import {add, sub as subtract } from "./operation";
 // import * as operation from "./operation.js";
 
-const result_add = add(2, 3, 4);
+// const result_add = add(2, 3, 4);
 // const result4 = operation.add(2, 3, 4);
-const result_sub = subtract(2, 3);
+// const result_sub = subtract(2, 3);
 
-console.log(result_add); 
-console.log(result_sub);
+// console.log(result_add); 
+// console.log(result_sub);

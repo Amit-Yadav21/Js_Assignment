@@ -1,8 +1,8 @@
 // ============================= Math and Date Object questions :
-const userInput = require('readline-sync');
 // -------------------------------------Q.1.a find the square root of a given number
-const num = userInput.questionInt('Enter your number :- ')
-let squareRoot = Math.sqrt(num);
+// const userInput = require('readline-sync');
+// const num = userInput.questionInt('Enter your number :- ')
+// let squareRoot = Math.sqrt(num);
 // console.log(squareRoot);
 
 // --------------------------------------Q.1.b find the value of PI
@@ -14,7 +14,7 @@ let randomNum = Math.floor(Math.random() * 10) + 1;
 // console.log(randomNum);
 
 let randomNumber = Math.ceil(Math.random() * 10);
-// console.log(randomNumber);
+// console.log('random number :',randomNumber);
 
 // ----------------------------------------- Q.1.d round a given decimal number to the nearest integer
 let decimalNumber = 2.9;
@@ -303,7 +303,7 @@ array.splice(array.indexOf(10), 1);
 // console.log(array); // 20,40,50]
 
 // ------------------------------------------------------------1.(j)
-const array = [1, 2, 3, 2, 4, 5, 2, 5, 4, 6];
+var array = [1, 2, 3, 2, 4, 5, 2, 5, 4, 6];
 const value = 2;
 let count = 0;
 for (let i = 0; i < arr.length; i++) {
@@ -355,32 +355,32 @@ const { name_, address: { city } } = obj;
 
 // =============================== Exception Handling in JS
 // ----------------------------------- 1)
-function SquareRoot(num) {
-    if (num < 0) {
-        throw new Error("Input must be a positive number");
-    }
-    return Math.sqrt(num);
-}
-try {
-    const input = -4;
-    const result = SquareRoot(input);
-    console.log(result);
-} catch (error) {
-    console.log(error.message);
-}
+// function SquareRoot(num) {
+//     if (num < 0) {
+//         throw new Error("Input must be a positive number");
+//     }
+//     return Math.sqrt(num);
+// }
+// try {
+//     const input = -4;
+//     const result = SquareRoot(input);
+//     console.log(result);
+// } catch (error) {
+//     console.log(error.message);
+// }
 
 // ------------------------------------------ 2)
-function divideNumbers(a, b) {
-    if (b === 0) {
-        throw new Error("Division by zero is not allowed");
-    }
-    return a / b;
-}
-try {
-    const dividend = Input.questionInt('Enter your 1st number : ')
-    const divisor = Input.questionInt('Enter your 2nd number : ')
-    const result = divideNumbers(dividend, divisor);
-    console.log(result);
-} catch (error) {
-    console.log(error.message);
-}
+// function divideNumbers(a, b) {
+//     if (b === 0) {
+//         throw new Error("Division by zero is not allowed");
+//     }
+//     return a / b;
+// }
+// try {
+//     const dividend = Input.questionInt('Enter your 1st number : ')
+//     const divisor = Input.questionInt('Enter your 2nd number : ')
+//     const result = divideNumbers(dividend, divisor);
+//     console.log(result);
+// } catch (error) {
+//     console.log(error.message);
+// }
