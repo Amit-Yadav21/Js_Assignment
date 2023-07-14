@@ -71,7 +71,7 @@ let timeOfDay = hours >= 12 ? 'PM' : 'AM';
 hours = hours % 12 || 12;
 
 // Construct the message
-let message = `Today is ${dayOfWeek}, ${month} ${date}, ${year}, and the time is ${hours}:${minutes.toString().padStart(2, '0')} ${timeOfDay}.`;
+let message = `Today is ${dayOfWeek}, ${month} ${date}, ${year}, and the time is ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')} ${timeOfDay}.`;
 // console.log(message);
 
 // ----------------------------------------------------- Q.2.c ?
